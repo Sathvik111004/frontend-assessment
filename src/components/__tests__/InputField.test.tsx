@@ -16,9 +16,8 @@ describe('InputField', () => {
   it('shows error message and aria-invalid', () => {
     const value = ''
     const onChange = vi.fn()
-    render(<InputField label="Test Label" errorMessage="Required" value={value} onChange={onChange} />)
+    render(<InputField label="Test" errorMessage="Required" value={value} onChange={onChange} />) // Added 'label="Test"'
     const input = screen.getByRole('textbox')
     expect(input).toHaveAttribute('aria-invalid', 'true')
     expect(screen.getByText('Required')).toBeInTheDocument()
-  })
 })
