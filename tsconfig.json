@@ -12,7 +12,7 @@
       "jsx": "react-jsx",
       "strict": true,
       "baseUrl": ".",
-      "types": ["vitest/globals", "@testing-library/jest-dom"],
+      "types": ["vitest/globals"],
 
       "paths": {"@/*": ["src/*"]}
     },
